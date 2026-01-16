@@ -28,4 +28,10 @@ classifiers = [
 ]
 
 [project.scripts]
-b64 = "utils:b64"
+b64 = "b64_cli.main:b64"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
